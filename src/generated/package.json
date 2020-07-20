@@ -1,25 +1,26 @@
 {
-    "name": "@voicify/voicify-sdk-assistant",
-    "version": "1.0.0",
-    "description": "NodeJS client for @voicify/voicify-sdk-assistant",
-    "repository": "GIT_USER_ID/GIT_REPO_ID",
-    "main": "api.js",
-    "types": "api.d.ts",
-    "scripts": {
-        "clean": "rm -Rf node_modules/ *.js",
-        "build": "tsc",
-        "test": "npm run build && node client.js"
-    },
-    "author": "Swagger Codegen Contributors",
-    "license": "Unlicense",
-    "dependencies": {
-        "bluebird": "^3.5.0",
-        "request": "^2.81.0",
-        "@types/bluebird": "*",
-        "@types/request": "*"
-    },
-    "devDependencies": {
-        "typescript": "^2.4.2",
-        "minimist": "^1.2.5"
-    }
+  "name": "@voicify/voicify-sdk-assistant",
+  "version": "1.0.1",
+  "description": "swagger client for @voicify/voicify-sdk-assistant",
+  "author": "Swagger Codegen Contributors",
+  "keywords": [
+    "fetch",
+    "typescript",
+    "swagger-client",
+    "@voicify/voicify-sdk-assistant"
+  ],
+  "license": "Unlicense",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --outDir dist/",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "portable-fetch": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.9",
+    "typescript": "^2.0"
+  }
 }

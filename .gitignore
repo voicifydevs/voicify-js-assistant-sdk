@@ -65,3 +65,4 @@ typings/
 api.js
 api.d.ts
 api.js.map
+**/dist

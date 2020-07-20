@@ -1,4 +1,6 @@
 {
     "npmName" : "@voicify/voicify-sdk-assistant",
-    "supportsES6": true
+    "supportsES6": true,
+    "withInterfaces": true,
+    "npmVersion": "1.0.1"
 }
