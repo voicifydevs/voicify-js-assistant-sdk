@@ -1,8 +1,8 @@
 {
   "name": "@voicify/voicify-sdk-assistant",
   "version": "1.0.1",
-  "description": "swagger client for @voicify/voicify-sdk-assistant",
-  "author": "Swagger Codegen Contributors",
+  "description": "API client for the Voicify Assistant API",
+  "author": "Voicify",
   "keywords": [
     "fetch",
     "typescript",
