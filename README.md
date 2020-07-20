@@ -13,7 +13,7 @@ There are some steps to autogenerate the TypeScript models from the swagger API 
 Sample:
 
 ```
-java -jar swagger-codegen-cli.jar generate -i http://assistant.voicify.com/swagger/v1/swagger.json -l typescript-node -c ../typescript-options.json -o ../../src/generated
+java -jar swagger-codegen-cli.jar generate -i http://assistant.voicify.com/swagger/v1/swagger.json -l typescript-fetch -c ../typescript-options.json -o ../../src/generated
 ```
 
 ## Build output
