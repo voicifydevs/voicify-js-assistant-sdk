@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
+        "jsx": "react",
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "typeRoots": [
+            "./node_modules/@types",
+            "shared/types"
+        ]
+    },
+    "exclude": [
+        "/node_modules/@nivo/bar/index.d.ts"
+    ]
+}
