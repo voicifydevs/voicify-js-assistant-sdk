@@ -20,7 +20,9 @@ export default class Setup extends React.Component<RouteComponentProps, State> {
         })
     }
 
-    handleNavigate() {
+    handleNavigate(e) {
+        e.preventDefault();
+
         const url = new URL(this.state.customAssistantUrl);
         console.log(url)
         // get the params out
@@ -28,11 +30,15 @@ export default class Setup extends React.Component<RouteComponentProps, State> {
 
         this.props.history.push(`/chat/${url?.hostname}/${params[0][1]}/${params[1][1]}`)
     }
-    
+
     render() {
         return <div>
-            <input value={this.state.customAssistantUrl} onChange={this.handleChange.bind(this)}/>
-            <button type="button" onClick={this.handleNavigate.bind(this)}>Start Chat</button>
+            <h1>Voicify React Chat Sample</h1>
+            <p>Enter a Voicify Custom Assistant URL that you want to use as a test. Then you can start sending messages to your app. You can get your custom assistant url from your App's Deployment settings in Voicify.</p>
+            <form onSubmit={this.handleNavigate.bind(this)}>
+                <input value={this.state.customAssistantUrl} onChange={this.handleChange.bind(this)} />
+                <button>Start Chat</button>
+            </form>
         </div>
     }
 }

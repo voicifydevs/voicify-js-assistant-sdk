@@ -49,9 +49,7 @@ export default class Chat extends React.Component<RouteComponentProps<ChatProps>
             messages
         });
 
-        CustomAssistantApiFp({
-            basePath: `https://${this.props.match.params.host}`,
-        }).handleRequest(this.props.match.params.appId, this.props.match.params.appSecret, {
+        CustomAssistantApiFp().handleRequest(this.props.match.params.appId, this.props.match.params.appSecret, {
             requestId: this.uuidv4(),
             user: this.user,
             device: this.device,
@@ -81,7 +79,9 @@ export default class Chat extends React.Component<RouteComponentProps<ChatProps>
 
     render() {
         return <form onSubmit={this.handleSend.bind(this)}>
-            <input value={this.state.currentMessage} onChange={this.handleChange.bind(this)} />
+            <h1>Voicify App Sample Chat</h1>
+            <p>You can type your message and hit send to start a conversation. To start a new session, just refresh the page.</p>
+            <input value={this.state.currentMessage} onChange={this.handleChange.bind(this)} placeholder="type a message" />
             <button>send</button>
             <div>
                 {this.state.messages.map((m, i) => <p key={i}>{m}</p>)}
