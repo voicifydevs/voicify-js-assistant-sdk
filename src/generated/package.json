@@ -1,6 +1,6 @@
 {
   "name": "@voicify/voicify-sdk-assistant",
-  "version": "1.0.1",
+  "version": "2.2.0",
   "description": "API client for the Voicify Assistant API",
   "author": "Voicify",
   "keywords": [
