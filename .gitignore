@@ -59,3 +59,12 @@ typings/
 
 # next.js build output
 .next
+
+
+# ignore output files
+api.js
+api.d.ts
+api.js.map
+**/dist
+
+**/.cache
